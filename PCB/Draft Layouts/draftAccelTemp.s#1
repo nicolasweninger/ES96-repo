@@ -546,7 +546,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="U$1" library="Arduino-clone" deviceset="PRO-MINI-2" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="ACCEL" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device=""/>
-<part name="TEMP" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -573,19 +572,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </instance>
 <instance part="ACCEL" gate="-4" x="114.3" y="66.04" smashed="yes">
 <attribute name="NAME" x="116.84" y="65.278" size="1.524" layer="95"/>
-</instance>
-<instance part="TEMP" gate="-1" x="114.3" y="53.34" smashed="yes">
-<attribute name="NAME" x="116.84" y="52.578" size="1.524" layer="95"/>
-<attribute name="VALUE" x="113.538" y="54.737" size="1.778" layer="96"/>
-</instance>
-<instance part="TEMP" gate="-2" x="114.3" y="50.8" smashed="yes">
-<attribute name="NAME" x="116.84" y="50.038" size="1.524" layer="95"/>
-</instance>
-<instance part="TEMP" gate="-3" x="114.3" y="48.26" smashed="yes">
-<attribute name="NAME" x="116.84" y="47.498" size="1.524" layer="95"/>
-</instance>
-<instance part="TEMP" gate="-4" x="114.3" y="45.72" smashed="yes">
-<attribute name="NAME" x="116.84" y="44.958" size="1.524" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -658,34 +644,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="ACCEL" gate="-4" pin="S"/>
 <wire x1="111.76" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
 <label x="106.68" y="66.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="TEMP" gate="-1" pin="S"/>
-<wire x1="111.76" y1="53.34" x2="106.68" y2="53.34" width="0.1524" layer="91"/>
-<label x="106.68" y="53.34" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="TEMP" gate="-2" pin="S"/>
-<wire x1="111.76" y1="50.8" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
-<label x="106.68" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="TEMP" gate="-3" pin="S"/>
-<wire x1="111.76" y1="48.26" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
-<label x="106.68" y="48.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="TEMP" gate="-4" pin="S"/>
-<wire x1="111.76" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
-<label x="106.68" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
