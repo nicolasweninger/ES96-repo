@@ -9967,6 +9967,8 @@ Source: www.kingbright.com</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="Power" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="MAINCON" library="pinhead2" deviceset="PINHD-1X4" device="M"/>
@@ -10061,7 +10063,7 @@ Source: www.kingbright.com</description>
 <busses>
 </busses>
 <nets>
-<net name="+3V3" class="0">
+<net name="+3V3" class="1">
 <segment>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="22.86" y1="45.72" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
@@ -10094,7 +10096,7 @@ Source: www.kingbright.com</description>
 <junction x="63.5" y="43.18"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <pinref part="MAINCON" gate="A" pin="4"/>
