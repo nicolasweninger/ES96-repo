@@ -20813,6 +20813,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="ACCEL1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-?-05" device="05-7058"/>
 <part name="ACCEL2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-?-05" device="05-7058"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="TAP5-45" package3d_urn="urn:adsk.eagle:package:23333/3" value="10uF"/>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -21150,6 +21151,10 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <attribute name="NAME" x="140.843" y="28.4226" size="1.778" layer="95"/>
 <attribute name="VALUE" x="140.843" y="23.3426" size="1.778" layer="96"/>
 </instance>
+<instance part="C7" gate="G$1" x="73.66" y="81.28" smashed="yes">
+<attribute name="NAME" x="75.184" y="81.661" size="1.778" layer="95"/>
+<attribute name="VALUE" x="75.184" y="76.581" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -21261,6 +21266,9 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <wire x1="73.66" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="76.2" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
+<junction x="73.66" y="71.12"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="154.94" x2="139.7" y2="147.32" width="0.1524" layer="91"/>
@@ -21481,6 +21489,9 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="71.12" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="86.36" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="86.36" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
+<junction x="73.66" y="86.36"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="162.56" x2="139.7" y2="167.64" width="0.1524" layer="91"/>

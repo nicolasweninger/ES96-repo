@@ -157,6 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYTQwNWMw" projecturn="a.cGVyc29uYWw6dWUyYTQwNWMwIzIwMTgxMTIyMTYxNjk0NTgx" f3durn="urn:adsk.wipprod:dm.lineage:MMUmWtWFTf6voOu1sfa3kA" pcbguid="9e39180f-c811-4b1d-9b29-3bf5fe3fa75b" lastpulledtime="" lastsyncedchangeguid="81426712-97eb-26f6-5639-6a3e30396f2e"/>
 <plain>
 <wire x1="16.51" y1="86.57" x2="16.51" y2="16.859" width="0" layer="20"/>
 <wire x1="16.51" y1="16.859" x2="18.51" y2="14.859" width="0" layer="20" curve="90"/>
@@ -175,6 +176,9 @@
 <text x="34.036" y="76.962" size="5.08" layer="22" rot="MR270">Main Board V1</text>
 <text x="62.23" y="62.23" size="2.54" layer="22" rot="MR270" align="center">Designed by
 Nicolas Weninger</text>
+<rectangle x1="27.94" y1="52.07" x2="34.29" y2="63.5" layer="21"/>
+<dimension x1="18.51" y1="88.57" x2="18.51" y2="14.859" x3="8.89" y3="51.7145" textsize="1.778" layer="51"/>
+<dimension x1="16.51" y1="86.57" x2="66.655" y2="86.57" x3="41.5825" y3="95.25" textsize="1.778" layer="51"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2413,6 +2417,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="30.226" y="39.624" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="SPICEPREFIX" value="C" x="29.21" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="29.718" y="73.533" smashed="yes" rot="R180">
+<attribute name="NAME" x="30.353" y="72.898" size="1.27" layer="25" rot="R180"/>
+<attribute name="SPICEPREFIX" value="C" x="29.718" y="73.533" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="SDA">
@@ -2529,6 +2537,23 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </polygon>
 <contactref element="D2" pad="A"/>
 <contactref element="D1" pad="C"/>
+<via x="52.07" y="77.47" extent="1-16" drill="0.35"/>
+<via x="34.29" y="33.02" extent="1-16" drill="0.35"/>
+<via x="27.94" y="53.34" extent="1-16" drill="0.35"/>
+<via x="27.94" y="60.96" extent="1-16" drill="0.35"/>
+<via x="22.352" y="85.598" extent="1-16" drill="0.35"/>
+<via x="47.752" y="25.908" extent="1-16" drill="0.35"/>
+<via x="63.754" y="38.735" extent="1-16" drill="0.35"/>
+<via x="28.575" y="71.247" extent="1-16" drill="0.35"/>
+<contactref element="C7" pad="2"/>
+<via x="25.4" y="46.863" extent="1-16" drill="0.35"/>
+<via x="32.004" y="17.907" extent="1-16" drill="0.35"/>
+<via x="64.77" y="69.85" extent="1-16" drill="0.35"/>
+<via x="64.77" y="59.69" extent="1-16" drill="0.35"/>
+<via x="64.77" y="44.45" extent="1-16" drill="0.35"/>
+<via x="44.704" y="34.925" extent="1-16" drill="0.35"/>
+<via x="36.83" y="60.96" extent="1-16" drill="0.35"/>
+<via x="36.068" y="76.581" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$2">
 <contactref element="D4" pad="A"/>
@@ -2610,7 +2635,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="31.41" y1="82.726" x2="31.75" y2="83.066" width="0.8128" layer="1"/>
 <wire x1="31.75" y1="80.01" x2="32.258" y2="79.502" width="0.6096" layer="1"/>
 <wire x1="32.258" y1="79.502" x2="32.258" y2="72.39" width="0.6096" layer="1"/>
-<wire x1="32.258" y1="72.39" x2="32.258" y2="69.85" width="0.6096" layer="1"/>
+<wire x1="32.258" y1="72.39" x2="32.258" y2="71.843" width="0.6096" layer="1"/>
 <wire x1="32.258" y1="69.85" x2="33.715" y2="69.85" width="0.6096" layer="1"/>
 <wire x1="45.72" y1="69.85" x2="43.092" y2="69.85" width="0.6096" layer="1"/>
 <wire x1="43.092" y1="69.85" x2="42.926" y2="70.016" width="0.6096" layer="1"/>
@@ -2664,6 +2689,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="26.416" y1="29.933" x2="26.377" y2="29.972" width="0.6096" layer="1"/>
 <wire x1="26.416" y1="27.178" x2="30.226" y2="23.368" width="0.6096" layer="1"/>
 <wire x1="30.226" y1="23.368" x2="30.226" y2="23.075" width="0.6096" layer="1"/>
+<contactref element="C7" pad="1"/>
+<wire x1="30.568" y1="73.533" x2="32.258" y2="71.843" width="0.6096" layer="1"/>
+<wire x1="32.258" y1="71.843" x2="32.258" y2="69.85" width="0.6096" layer="1"/>
 </signal>
 <signal name="D10">
 <contactref element="U$1" pad="D10"/>
@@ -2963,6 +2991,11 @@ which will not be processed correctly with this version.
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library

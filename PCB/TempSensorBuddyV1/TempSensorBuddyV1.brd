@@ -157,6 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYTQwNWMw" projecturn="a.cGVyc29uYWw6dWUyYTQwNWMwIzIwMTgxMTIyMTYxNjk0NTgx" f3durn="urn:adsk.wipprod:dm.lineage:Pz8pRR99QVKkJXaCvIpEdQ" pcbguid="5437612e-7b6c-4196-a993-c848b8381be6" lastpulledtime="" lastsyncedchangeguid="0f07735d-ef75-6560-6ffd-43bc7f8613bd"/>
 <plain>
 <wire x1="0.635" y1="16.78" x2="0.635" y2="3.032" width="0" layer="20"/>
 <wire x1="0.635" y1="3.032" x2="1.635" y2="2.032" width="0" layer="20" curve="90"/>
@@ -173,6 +174,8 @@
 <text x="6.731" y="12.065" size="1.27" layer="22" rot="MR0" align="center">Temp Buddy</text>
 <text x="6.35" y="9.271" size="1.27" layer="22" rot="MR0" align="center">Nicolas
 Weninger</text>
+<dimension x1="12.573" y1="16.78" x2="0.635" y2="16.78" x3="6.604" y3="19.05" textsize="1.778" layer="51" width="0.1" precision="1"/>
+<dimension x1="1.635" y1="17.78" x2="1.635" y2="2.032" x3="-1.905" y3="9.906" textsize="1.778" layer="51" width="0.1" precision="1"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1649,6 +1652,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="16" y="0"/>
 <vertex x="-3" y="0"/>
 </polygon>
+<via x="9.779" y="14.478" extent="1-16" drill="0.35"/>
+<via x="5.334" y="10.668" extent="1-16" drill="0.35"/>
+<via x="5.334" y="7.493" extent="1-16" drill="0.35"/>
+<via x="2.159" y="3.048" extent="1-16" drill="0.35"/>
+<via x="9.144" y="17.018" extent="1-16" drill="0.35"/>
+<via x="11.049" y="5.588" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="SCL">
 <contactref element="MAINCON" pad="3"/>
@@ -1712,6 +1721,11 @@ which will not be processed correctly with this version.
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
