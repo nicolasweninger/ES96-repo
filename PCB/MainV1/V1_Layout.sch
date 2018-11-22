@@ -20876,7 +20876,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="D4" gate="1" x="264.16" y="71.12" smashed="yes" rot="R270">
 <attribute name="NAME" x="264.6426" y="68.58" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="SUPPLY1" gate="GND" x="261.62" y="83.82" smashed="yes"/>
+<instance part="SUPPLY1" gate="GND" x="261.62" y="81.28" smashed="yes"/>
 <instance part="SUPPLY2" gate="GND" x="261.62" y="60.96" smashed="yes"/>
 <instance part="U2" gate="G$1" x="50.8" y="68.58" smashed="yes"/>
 <instance part="SUPPLY9" gate="GND" x="45.72" y="180.34" smashed="yes" rot="R270"/>
@@ -21237,15 +21237,6 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="D2" gate="1" pin="A"/>
-<wire x1="259.08" y1="88.9" x2="259.08" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="86.36" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="D1" gate="1" pin="C"/>
-<wire x1="264.16" y1="86.36" x2="264.16" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="86.36" x2="261.62" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="GND" pin="GND"/>
-</segment>
-<segment>
 <wire x1="287.02" y1="71.12" x2="287.02" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="-V"/>
@@ -21418,6 +21409,17 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <pinref part="IND3" gate="G$1" pin="C"/>
 <pinref part="SUPPLY20" gate="GND" pin="GND"/>
 <wire x1="73.66" y1="15.24" x2="73.66" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D2" gate="1" pin="A"/>
+<wire x1="259.08" y1="88.9" x2="259.08" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="264.16" y1="86.36" x2="264.16" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="86.36" x2="261.62" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<wire x1="261.62" y1="86.36" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="83.82" x2="261.62" y2="86.36" width="0.1524" layer="91"/>
+<junction x="261.62" y="86.36"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -21962,6 +21964,30 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,264.16,175.26,IC1P,V+,+3V3,,,"/>
+<approved hash="104,1,264.16,160.02,IC1P,V-,GND,,,"/>
+<approved hash="104,1,287.02,71.12,IC2,-V,GND,,,"/>
+<approved hash="104,1,287.02,101.6,IC2,+V,+3V3,,,"/>
+<approved hash="208,1,292.1,73.66,AGND,sup,,,,"/>
+<approved hash="208,1,287.02,162.56,AGND,sup,,,,"/>
+<approved hash="208,1,271.78,167.64,AGND,out,,,,"/>
+<approved hash="208,1,302.26,134.62,AGND,sup,,,,"/>
+<approved hash="110,1,45.72,86.36,SDA,SCL,,,,"/>
+<approved hash="111,1,45.72,86.36,SDA,,,,,"/>
+<approved hash="113,1,55.6539,188.197,FTDI,,,,,"/>
+<approved hash="113,1,32.7829,149.634,JP1,,,,,"/>
+<approved hash="113,1,96.7571,152.626,JP2,,,,,"/>
+<approved hash="113,1,66.2661,121.683,JP3,,,,,"/>
+<approved hash="113,1,205.75,84.0461,TEMPCON,,,,,"/>
+<approved hash="113,1,323.827,78.74,D5,,,,,"/>
+<approved hash="113,1,323.827,93.98,D6,,,,,"/>
+<approved hash="113,1,96.2939,188.197,PWR,,,,,"/>
+<approved hash="113,1,28.2617,19.05,PWR1,,,,,"/>
+<approved hash="113,1,43.5017,19.05,IND1,,,,,"/>
+<approved hash="113,1,58.7417,19.05,IND2,,,,,"/>
+<approved hash="113,1,73.9817,19.05,IND3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
