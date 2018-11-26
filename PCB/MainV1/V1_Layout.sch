@@ -20770,7 +20770,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k"/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="330k"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R"/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="AGND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
@@ -20860,6 +20860,9 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <text x="91.44" y="50.8" size="2.54" layer="94">Extra Bypass Capacitors</text>
 <text x="91.44" y="106.68" size="1.778" layer="97">Address: 0x1D and 0x1C</text>
 <text x="170.18" y="106.68" size="1.778" layer="97">Address: 0x90</text>
+<wire x1="167.64" y1="-2.54" x2="342.9" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="342.9" y1="-2.54" x2="342.9" y2="55.88" width="0.254" layer="94"/>
+<text x="172.72" y="50.8" size="2.54" layer="94">V1 Notes:</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="66.04" y="152.4" smashed="yes"/>
